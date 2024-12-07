@@ -136,9 +136,9 @@ header h1 span {
 
 /* main */
 main {
-  min-height: 100%;
+/*   min-height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
 
   background-color: #1a1a1a;
 }
@@ -310,6 +310,60 @@ main {
 
 .product .button-buy {
   margin-top: 24px;
+}
+
+/* protections-block */
+.protections-block {
+  padding: 24px 12px 48px 12px;
+  height: 504px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+}
+
+.gadget-protection,
+.components-protection {
+  width: 296px;
+  height: 210px;
+  padding: 24px 0px 24px 24px;
+  background: #f2f2f2;
+  border-radius: 16px;
+  font-size: 16px;
+  position: relative;
+}
+
+.gadget-protection h3,
+.components-protection h3 {
+  font-weight: 600;
+  color: 000000;
+}
+
+.gadget-protection ul {
+  margin-top: 13px;
+  display: inline-block;
+}
+
+.components-protection ul {
+  margin-top: 12px;
+  display: inline-block;
+}
+
+.gadget-protection li,
+.components-protection li {
+  font-weight: 400;
+  color: #666666;
+  list-style-type: none;
+}
+
+.gadget-protection img,
+.components-protection img {
+  width: 120px;
+  height: 120px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* footer */
