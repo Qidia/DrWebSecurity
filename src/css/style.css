@@ -84,7 +84,7 @@ header h1 span {
 }
 
 .button-buy:hover {
-  background: #80BF4D;
+  background: #80bf4d;
 }
 
 .header-block-img {
@@ -273,9 +273,19 @@ main {
   left: 0;
 }
 
-.previous-price p {
-  text-decoration: line-through;
+.previous-price::after {
+  content: " ";
+  position: absolute;
+  background: #b3b3b3;
+  left: 0;
+  right: 0;
+  bottom: 35%;
+  height: 1px;
 }
+
+/* .previous-price p {
+  text-decoration: line-through;
+} */
 
 .previous-price p,
 .previous-price span {
@@ -363,7 +373,7 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  
+
   height: 176px;
 
   display: flex;
