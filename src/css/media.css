@@ -5,7 +5,7 @@
 
   /* header */
   header {
-    padding-bottom: 24px;
+    padding-bottom: 32px;
   }
 
   .header-info {
@@ -58,5 +58,63 @@
     bottom: 82.85px;
     left: 312.26px;
     border-radius: 12px;
+  }
+}
+
+@media (min-width: 481px) {
+  body {
+    width: 768px;
+  }
+
+  /* header */
+  header {
+    padding-bottom: 32px;
+  }
+
+  .header-info {
+    width: 704px;
+    height: 254px;
+    margin-top: 86.5px;
+  }
+
+  .logo {
+    width: 268px;
+    height: 50px;
+  }
+
+  header h1 {
+    font-size: 48px;
+    width: 704px;
+    height: 92px;
+  }
+
+  header h1 span {
+    font-size: 24px;
+  }
+
+  .header-block-img {
+    margin-top: 64.5px;
+    width: 704px;
+    height: 315px;
+  }
+
+  .header-block-img::before {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 45px;
+  }
+
+  .header-block-img img {
+    width: 704px;
+    height: 315px;
+  }
+
+  .header-block-img span {
+    font-size: 46.15px;
+    padding: 10.2px 18.78px;
+    bottom: 102.61px;
+    left: 487px;
+    border-radius: 22.54px;
   }
 }
