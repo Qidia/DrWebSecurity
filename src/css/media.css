@@ -1,8 +1,17 @@
-@media (min-width: 480px) {
-  body {
-    width: 480px;
-  }
+:root {
+  --font-size-86: 86px;
+  --font-size-48: 48px;
+  --font-size-40: 40px;
+  --font-size-32: 32px;
+  --font-size-24: 24px;
+  --font-size-20: 20px;
 
+  --font-weight-500: 500;
+
+  --m-t-32: 32px;
+}
+
+@media (min-width: 480px) {
   /* header */
   header {
     padding-bottom: 32px;
@@ -20,29 +29,29 @@
   }
 
   header h1 {
-    font-size: 32px;
-    margin-top: 32px;
     width: 416px;
     height: 74px;
+    margin-top: var(--m-t-32);
+    font-size: var(--font-size-32);
     white-space: nowrap;
   }
 
   header h1 span {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-500);
     margin-top: 8px;
   }
 
   .header-block-img {
-    margin-top: 32px;
+    margin-top: var(--m-t-32);
     width: 448px;
     height: 253px;
   }
 
   .header-block-img::before {
+    border-radius: 30px;
     left: 22px;
     bottom: 0;
-    border-radius: 30px;
     right: 0;
     top: 45px;
   }
@@ -63,8 +72,8 @@
   /* product-block */
   .product-block {
     height: 918px;
-    padding: 60px 0 45px 0;
     width: 448px;
+    padding: 60px 0 45px 0;
     margin: 0 auto;
     border-radius: 32px;
   }
@@ -94,8 +103,8 @@
   }
 
   .product .info h2 {
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-24);
   }
 
   .price {
@@ -105,7 +114,7 @@
   .current-price {
     bottom: 0;
     left: 0;
-    font-size: 32px;
+    font-size: var(--font-size-32);
   }
 
   .product .button-buy {
@@ -129,7 +138,7 @@
 
   .gadget-protection h3,
   .components-protection h3 {
-    font-size: 24px;
+    font-size: var(--font-size-24);
   }
 
   .gadget-protection img,
@@ -144,6 +153,10 @@
     padding: 0 16px;
   }
 
+  footer div {
+    width: 448px;
+  }
+
   footer p {
     margin-top: 12px;
   }
@@ -154,10 +167,6 @@
 }
 
 @media (min-width: 768px) {
-  body {
-    width: 768px;
-  }
-
   /* header */
   header {
     padding-bottom: 32px;
@@ -175,13 +184,13 @@
   }
 
   header h1 {
-    font-size: 48px;
+    font-size: var(--font-size-48);
     width: 704px;
     height: 92px;
   }
 
   header h1 span {
-    font-size: 24px;
+    font-size: var(--font-size-24);
   }
 
   .header-block-img {
@@ -213,9 +222,9 @@
   /* product-block */
   .product-block {
     height: 1015px;
+    width: 704px;
     padding: 80px 0;
     margin: 0 auto;
-    width: 704px;
   }
 
   .product-info {
@@ -224,11 +233,11 @@
   }
 
   .product-info h2 {
-    font-size: 32px;
+    font-size: var(--font-size-32);
   }
 
   .product-info p {
-    font-size: 20px;
+    font-size: var(--font-size-20);
   }
 
   /* protections-block */
@@ -236,6 +245,11 @@
     padding: 32px 32px 64px 32px;
     flex-direction: row;
     height: 752px;
+    justify-content: center;
+  }
+
+  .gadget-protection {
+    margin-right: 16px;
   }
 
   .gadget-protection,
@@ -248,7 +262,7 @@
 
   .gadget-protection h3,
   .components-protection h3 {
-    font-size: 24px;
+    font-size: var(--font-size-24);
   }
 
   .gadget-protection img,
@@ -260,7 +274,12 @@
   /* footer */
   footer {
     height: 246px;
+    min-width: 704px;
     padding: 0 32px;
+  }
+
+  footer div {
+    width: 704px;
   }
 
   footer p {
@@ -270,10 +289,6 @@
 }
 
 @media (min-width: 1920px) {
-  body {
-    width: 1920px;
-  }
-
   /* header */
   header {
     padding-bottom: 64px;
@@ -286,14 +301,14 @@
   }
 
   header h1 {
-    font-size: 86px;
+    font-size: var(--font-size-86);
     width: 100%;
     height: 164px;
   }
 
   header h1 span {
-    font-size: 40px;
-    font-weight: 500;
+    font-size: var(--font-size-40);
+    font-weight: var(--font-weight-500);
     margin-top: 16px;
   }
 
@@ -316,7 +331,7 @@
   }
 
   .header-block-img span {
-    font-size: 86px;
+    font-size: var(--font-size-86);
     padding: 19px 35px;
     bottom: 191px;
     left: 837px;
@@ -333,6 +348,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    justify-content: center;
+  }
+
+  .gadget-protection {
+    margin-right: 32px;
   }
 
   .product-info {
@@ -363,12 +383,12 @@
     height: 616px;
     padding: 64px;
     border-radius: 32px;
-    font-size: 20px;
+    font-size: var(--font-size-20);
   }
 
   .gadget-protection h3,
   .components-protection h3 {
-    font-size: 32px;
+    font-size: var(--font-size-32);
   }
 
   .gadget-protection img,
@@ -380,7 +400,12 @@
   /* footer */
   footer {
     height: 228px;
+    min-width: 1168px;
     padding: 0 376px;
+  }
+
+  footer div {
+    width: 1168px;
   }
 
   footer p {
