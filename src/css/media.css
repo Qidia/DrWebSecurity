@@ -59,6 +59,20 @@
     left: 312.26px;
     border-radius: 12px;
   }
+
+  /* footer */
+  footer {
+    height: 178px;
+    padding: 0 16px;
+  }
+
+  footer p {
+    margin-top: 12px;
+  }
+
+  footer p span {
+    white-space: normal;
+  }
 }
 
 @media (min-width: 481px) {
@@ -117,6 +131,17 @@
     left: 487px;
     border-radius: 22.54px;
   }
+
+  /* footer */
+  footer {
+    height: 246px;
+    padding: 0 32px;
+  }
+
+  footer p {
+    margin-top: 12px;
+    width: 224px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -171,5 +196,16 @@
     bottom: 191px;
     left: 837px;
     border-radius: 42px;
+  }
+
+  /* footer */
+  footer {
+    height: 228px;
+    padding: 0 376px;
+  }
+
+  footer p {
+    margin-top: 12px;
+    width: 368px;
   }
 }
