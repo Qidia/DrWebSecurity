@@ -1,0 +1,62 @@
+@media (min-width: 321px) {
+  body {
+    width: 480px;
+  }
+
+  /* header */
+  header {
+    padding-bottom: 24px;
+  }
+
+  .header-info {
+    width: 416px;
+    height: 236px;
+    margin-top: 48px;
+  }
+
+  .logo {
+    width: 268px;
+    height: 50px;
+  }
+
+  header h1 {
+    font-size: 32px;
+    margin-top: 32px;
+    width: 416px;
+    height: 74px;
+    white-space: nowrap;
+  }
+
+  header h1 span {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 8px;
+  }
+
+  .header-block-img {
+    margin-top: 32px;
+    width: 448px;
+    height: 253px;
+  }
+
+  .header-block-img::before {
+    left: 22px;
+    bottom: 0;
+    border-radius: 30px;
+    right: 0;
+    top: 45px;
+  }
+
+  .header-block-img img {
+    width: 448px;
+    height: 253px;
+  }
+
+  .header-block-img span {
+    font-size: 37.07px;
+    padding: 8.19px 15.08px;
+    bottom: 82.85px;
+    left: 312.26px;
+    border-radius: 12px;
+  }
+}
