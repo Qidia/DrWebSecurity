@@ -16,7 +16,7 @@
 
   --p-b-24: 24px;
   --m-b-32: 32px;
-  
+
   --m-t-8: 8px;
   --m-t-12: 12px;
   --m-t-13: 13px;
@@ -145,21 +145,23 @@ header h1 span {
   border-radius: var(--b-r-16);
   top: 25px;
   bottom: 0;
-  left: 15px;
-  right: 15px;
+  left: 0;
+  right: 0;
+  width: 296px;
 }
 
 .header-block-img img {
-  width: 296px;
+  width: 326px;
   height: 165px;
   position: absolute;
+  margin-left: -14px;
 }
 
 .header-block-img span {
   display: block;
   position: absolute;
   bottom: 54.26px;
-  left: 205.56px;
+  right: 15.72px;
   border-radius: 7.84px;
   padding: 5.35px 9.86px;
 
